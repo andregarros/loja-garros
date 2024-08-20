@@ -97,3 +97,63 @@ footer h2{
     font-family: 'Courier New', Courier, monospace;
     
 }
+.btn-abrir-menu img{
+    color: #6201f4;
+    height: 40px ;
+}
+.overlay-menu-mobile{
+    background-color: rgba(0, 0, 0, 0.719);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+.menu-mobile{
+    background-color: var(--secundario-color);
+    height: 100vh;
+    font-size: 2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+}
+.menu-mobile.abrindo-menu{
+    width: 60%;
+    transition: 0.5s;
+}
+.menu-mobile.abrindo-menu ~ .overlay-menu-mobile{
+    display: block;
+}
+.menu-mobile ul{
+    font-family: Poppins;
+    font-weight: bold;
+    list-style: none;
+    margin-top: 40px;
+    text-align: left;
+    font-size: 20px;
+}
+.menu-mobile ul .cor{
+    color: red;
+}
+.menu-mobile ul li{
+    padding: 0 25px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-mobile ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.menu-mobile ul #responsavel-botao-do-menu{
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 5px 0px;
+}
