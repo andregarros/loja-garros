@@ -16,12 +16,38 @@ body{
     background-color: var(--teciaria-color) ;
     font-family: 'bebas';
 }
-header{
-    background-color: var(--secundario-color);
+.nav{
+
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+
     align-items: center;
+}
+header{
+    background-color: var(--secundario-color);
+    padding: 20px;
+}
+#barra{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+
+   
+}
+
+
+
+#barra input{
+    display: flex;
+    height: 40px;
+    width: 350px;
+    border-radius: 40px;
+    border: none;
+    padding-left: 20px;
+    font-size: 17px;
+    outline: none;
 }
 .ajuste-menu{
    display: flex;
